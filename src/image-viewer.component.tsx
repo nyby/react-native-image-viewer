@@ -282,7 +282,7 @@ export default class ImageViewer extends React.Component<Props, State> {
     this.standardPositionX = this.positionXNumber;
     Animated.timing(this.positionX, {
       toValue: this.positionXNumber,
-      duration: 100
+      duration: 300
     }).start();
 
     const nextIndex = (this.state.currentShowIndex || 0) - 1;
@@ -315,7 +315,7 @@ export default class ImageViewer extends React.Component<Props, State> {
     this.standardPositionX = this.positionXNumber;
     Animated.timing(this.positionX, {
       toValue: this.positionXNumber,
-      duration: 100
+      duration: 300
     }).start();
 
     const nextIndex = (this.state.currentShowIndex || 0) + 1;
@@ -339,7 +339,7 @@ export default class ImageViewer extends React.Component<Props, State> {
     this.positionXNumber = this.standardPositionX;
     Animated.timing(this.positionX, {
       toValue: this.standardPositionX,
-      duration: 150
+      duration: 300
     }).start();
   }
 
